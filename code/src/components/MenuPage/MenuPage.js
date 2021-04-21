@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import MenuCard from './MenuCard'
 import menus from '../../menus'
 
@@ -28,6 +29,8 @@ const MenuPage = () => {
 
   return (
     <div className="menupage-container">
+      <Link to="/">Go to home page</Link>
+
       <h2>Menu</h2>
 
       {/*  move filter btn section into its own component ? */}

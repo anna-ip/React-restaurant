@@ -1,0 +1,20 @@
+$font-family: 'Oswald', sans-serif;
+$primary-color: #d7c8b1;
+
+body {
+  font-family: $font-family;
+  font-weight: 500;
+  background-color: $primary-color;
+  text-align: center;
+}
+h1 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.header-container,
+.landingpage-container,
+.footer-container,
+.menupage-container {
+  border: 1px solid black;
+}

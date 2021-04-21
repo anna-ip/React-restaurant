@@ -23,7 +23,7 @@ const Reviews = () => {
   console.log(current)
   return (
     <div>
-      <h1>Reviews</h1>
+      <h2>Reviews</h2>
       <div>
         <Card quote={quote} />
         <Arrows nextReview={nextReview} prevRewiev={prevRewiev} />
