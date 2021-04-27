@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
+import { ReviewContext } from '../../../App'
 import Card from './Card'
 import Arrows from './Arrows'
-import review from '../../../review'
 
 const Reviews = () => {
-  const [reviewData, setReviewData] = useState(review)
+  const [storeReviews] = useContext(ReviewContext)
+  const reviews = storeReviews.reviews
+
+  const [reviewData, setReviewData] = useState(reviews)
   const [current, setCurrent] = useState(0)
   const [quote, getQuote] = useState(reviewData[current])
 
@@ -20,7 +23,6 @@ const Reviews = () => {
     current === 0 ? setCurrent(reviewData.length - 1) : setCurrent(current - 1)
   }
 
-  console.log(current)
   return (
     <div>
       <h2>Reviews</h2>

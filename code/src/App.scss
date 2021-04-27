@@ -1,5 +1,9 @@
-$font-family: 'Oswald', sans-serif;
-$primary-color: #d7c8b1;
+@import './components/Header/Header.module.scss';
+@import './components/Footer/Footer.module.scss';
+@import './components/MenuPage/MenuCard.module.scss';
+@import './components/MenuPage/MenuPage.module.scss';
+
+@import './styles/_variables.scss';
 
 body {
   font-family: $font-family;

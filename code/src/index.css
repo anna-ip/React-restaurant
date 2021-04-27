@@ -7,14 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-.header-container,
-.landingpage-container,
-.footer-container,
-.menupage-container {
-  border: 1px solid black;
-}
+} */
