@@ -1,0 +1,12 @@
+@import '../../styles/_variables.scss';
+
+.btn {
+  border: none;
+  background: inherit;
+  color: #c85935;
+  text-transform: capitalize;
+
+  @media (min-width: $layout-breakpoint-small) {
+    font-size: 1.1rem;
+  }
+}

@@ -1,21 +1,26 @@
 import React from 'react'
-import { container } from './MenuCard.module.scss'
+import styles from './MenuCard.module.scss'
 
 const MenuCard = ({ filteredMenu }) => {
   return (
     <>
       {filteredMenu &&
         filteredMenu.map((menu) => (
-          <div key={menu.id} className={container}>
+          <div key={menu.id} className={styles.container}>
             <img
               src={`assets/${menu.img}`}
               alt="dish"
               width="150vw"
               height="150vw"
+              className={styles.img}
             />
-            <p>{menu.title}</p>
+            <section className={styles.section}>
+            <div className={styles.titleContainer}>
+            <p className={styles.title}>{menu.title}</p>
             <p>{menu.price}</p>
-            <p>{menu.desc}</p>
+            </div>
+            <p className={styles.desc}>{menu.desc}</p>
+            </section>
           </div>
         ))}
     </>

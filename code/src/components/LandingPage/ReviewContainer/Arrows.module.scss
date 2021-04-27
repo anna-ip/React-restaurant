@@ -1,0 +1,27 @@
+@import '../../../styles/_variables.scss';
+
+.prev, .next {
+  display: block;
+  position: absolute;
+  top: 650px;
+  background-color: inherit;
+  border: none;
+  font-size: 1.4rem;
+  color: #c85935;
+
+    @media(min-width: $layout-breakpoint-small) {
+      top: 950px;
+    } 
+}
+.prev {
+  left: 5vw;
+   @media(min-width: $layout-breakpoint-small) {
+      left: 8vw;
+    }
+}
+.next {
+  right: 5vw;
+  @media(min-width: $layout-breakpoint-small) {
+      right: 8vw;
+    }
+}

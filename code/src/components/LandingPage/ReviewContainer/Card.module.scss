@@ -1,0 +1,12 @@
+@import '../../../styles/_variables.scss';
+
+.container {
+  width: 75%;
+}
+.name {
+  color: #1c6e8e;
+  text-transform: capitalize;
+}
+.quote {
+  color: $font-color;
+}

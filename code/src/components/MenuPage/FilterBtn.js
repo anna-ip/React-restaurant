@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { MenuContext } from '../../App'
+import styles from './FilterBtn.module.scss'
 
 const FilterBtn = ({ filterMenuClick }) => {
   const [storeMenus] = useContext(MenuContext)
@@ -21,6 +22,7 @@ const FilterBtn = ({ filterMenuClick }) => {
           onClick={(e) => filterMenuClick(e)}
           value={section.category || 'all'}
           key={index}
+          className={styles.btn}
         >
           {section.category || 'all'}
         </button>

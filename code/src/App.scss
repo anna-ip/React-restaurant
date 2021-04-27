@@ -2,7 +2,10 @@
 @import './components/Footer/Footer.module.scss';
 @import './components/MenuPage/MenuCard.module.scss';
 @import './components/MenuPage/MenuPage.module.scss';
-
+@import './components/LandingPage/ReviewContainer/Reviews.module.scss';
+@import './components/LandingPage/LandingPage.module.scss';
+@import './components/LandingPage/ReviewContainer/Card.module.scss';
+@import './components/LandingPage/ReviewContainer/Arrows.module.scss';
 @import './styles/_variables.scss';
 
 body {
@@ -14,11 +17,5 @@ body {
 h1 {
   font-weight: 600;
   font-size: 3rem;
-}
-
-.header-container,
-.landingpage-container,
-.footer-container,
-.menupage-container {
-  border: 1px solid black;
+  color: $font-color;
 }

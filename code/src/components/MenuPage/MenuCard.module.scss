@@ -1,4 +1,55 @@
+@import '../../styles/_variables.scss';
+
 .container {
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e2ede9;
   max-width: 500px;
+  padding: 0.5rem;
+  margin: 0.5rem;
+
+  @media (min-width: $layout-breakpoint-small) {
+    flex-direction: row;
+  }
+}
+.section {
+  display: flex;
+  @media (min-width: $layout-breakpoint-small) {
+  flex-direction: column;
+  margin: 0 0.5rem;
+  width: 80%;
+  }
+}
+.title {
+  text-transform: capitalize;
+}
+.img {
+  width: 20rem;
+  height: auto;
+  object-fit: cover;
+  margin-top: 0.5rem;
+
+  @media (min-width: $layout-breakpoint-small) {
+    width: 10rem;
+    height: 12rem;
+  }
+}
+.titleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 20rem;
+
+   @media (min-width: $layout-breakpoint-small) {
+     width: 80%;
+   }
+}
+.desc {
+  width: 20rem;
+  text-align: initial;
+
+}
+.desc::first-letter {
+  text-transform: capitalize;
 }

@@ -1,0 +1,26 @@
+@import '../../../styles/_variables.scss';
+
+h3 {
+  color: #373737;
+   margin: 1.2rem 0 0 0;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  height: 360px;
+  margin: 3rem 0 3rem 0;
+  background-color: #e2ede9;
+
+  @media (min-width: $layout-breakpoint-small) {
+    width: 90%;
+  }
+}
+.coutes {
+  color: #fff;
+  font-size: 2.2rem;
+}

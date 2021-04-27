@@ -1,0 +1,34 @@
+a {
+  color: #c85935;
+}
+img {
+  width: 90%;
+  border: 0.5rem solid #d6c6b0;
+}
+
+.landingpageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+}
+.link,
+.menu {
+  text-decoration: none;
+}
+.link:hover,
+.menu:hover {
+  text-decoration: underline;
+}
+.link {
+  font-size: 1.2rem;
+}
+.menu {
+  font-size: 1.5rem;
+}

@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from 'react'
 import { ReviewContext } from '../../../App'
 import Card from './Card'
 import Arrows from './Arrows'
+import styles from './Reviews.module.scss'
 
 const Reviews = () => {
   const [storeReviews] = useContext(ReviewContext)
@@ -24,12 +25,13 @@ const Reviews = () => {
   }
 
   return (
-    <div>
-      <h2>Reviews</h2>
-      <div>
+    <div className={styles.container}>
+      <h3>Reviews</h3>
+      <section>
+        <span className={styles.coutes}>,,</span>
         <Card quote={quote} />
         <Arrows nextReview={nextReview} prevRewiev={prevRewiev} />
-      </div>
+      </section>
     </div>
   )
 }

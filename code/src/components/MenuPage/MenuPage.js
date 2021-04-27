@@ -24,7 +24,7 @@ const MenuPage = () => {
 
   return (
     <div className={styles.container}>
-      <Link to="/">Go to home page</Link>
+      <Link to="/" className={styles.link}>Go to home page</Link>
 
       <h2>Menu</h2>
       <div className={styles.btnContainer}>
