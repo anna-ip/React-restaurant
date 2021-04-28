@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import './App.scss'
 import Header from './components/Header/Header'
 import LandingPage from './components/LandingPage/LandingPage'
 import MenuPage from './components/MenuPage/MenuPage'
 import Footer from './components/Footer/Footer'
+import './App.scss'
 
 import menus from './menus.json'
 import reviews from './reviews.json'

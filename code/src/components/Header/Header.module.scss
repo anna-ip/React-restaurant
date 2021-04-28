@@ -1,3 +1,8 @@
-h1 {
+@import '../../styles/_variables.scss';
+
+.logo {
+  font-weight: 600;
+  font-size: 3rem;
+  color: $font-color;
   text-decoration: overline;
 }

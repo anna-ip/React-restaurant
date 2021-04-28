@@ -1,34 +1,33 @@
-a {
-  color: #c85935;
-}
-img {
-  width: 90%;
-  border: 0.5rem solid #d6c6b0;
-}
+@import '../../styles/_variables.scss';
+@import '../../styles/mixins';
 
 .landingpageContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flexCenter;
 }
 .linkContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flexCenter;
   justify-content: center;
   height: 5rem;
+
+  .link,
+  .menu {
+    color: $red-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .link {
+    font-size: 1.2rem;
+  }
+  .menu {
+    font-size: 1.5rem;
+  }
 }
-.link,
-.menu {
-  text-decoration: none;
-}
-.link:hover,
-.menu:hover {
-  text-decoration: underline;
-}
-.link {
-  font-size: 1.2rem;
-}
-.menu {
-  font-size: 1.5rem;
+.img {
+  width: 90%;
+  height: auto;
+  border: $image-border;
 }

@@ -15,11 +15,11 @@ const MenuCard = ({ filteredMenu }) => {
               className={styles.img}
             />
             <section className={styles.section}>
-            <div className={styles.titleContainer}>
-            <p className={styles.title}>{menu.title}</p>
-            <p>{menu.price}</p>
-            </div>
-            <p className={styles.desc}>{menu.desc}</p>
+              <div className={styles.titleContainer}>
+                <p className={styles.title}>{menu.title}</p>
+                <p>{menu.price}</p>
+              </div>
+              <p className={styles.desc}>{menu.desc}</p>
             </section>
           </div>
         ))}

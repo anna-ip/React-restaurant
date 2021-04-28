@@ -3,7 +3,7 @@
 .btn {
   border: none;
   background: inherit;
-  color: #c85935;
+  color: $red-color;
   text-transform: capitalize;
 
   @media (min-width: $layout-breakpoint-small) {

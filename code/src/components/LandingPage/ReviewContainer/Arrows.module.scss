@@ -1,27 +1,28 @@
 @import '../../../styles/_variables.scss';
 
-.prev, .next {
+.prev,
+.next {
   display: block;
   position: absolute;
-  top: 650px;
+  top: 198px;
   background-color: inherit;
   border: none;
-  font-size: 1.4rem;
-  color: #c85935;
+  font-size: 6.4vw;
+  color: $red-color;
 
-    @media(min-width: $layout-breakpoint-small) {
-      top: 950px;
-    } 
+  @media (min-width: $layout-breakpoint-small) {
+    font-size: 4vw;
+  }
 }
 .prev {
-  left: 5vw;
-   @media(min-width: $layout-breakpoint-small) {
-      left: 8vw;
-    }
+  left: 2vw;
+  @media (min-width: $layout-breakpoint-small) {
+    left: 1vw;
+  }
 }
 .next {
-  right: 5vw;
-  @media(min-width: $layout-breakpoint-small) {
-      right: 8vw;
-    }
+  right: 2vw;
+  @media (min-width: $layout-breakpoint-small) {
+    right: 1vw;
+  }
 }

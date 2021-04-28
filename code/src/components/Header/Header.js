@@ -1,10 +1,10 @@
 import React from 'react'
-import { container } from './Header.module.scss'
+import styles from './Header.module.scss'
 
 const Header = () => {
   return (
-    <div className={container}>
-      <h1>The Diner</h1>
+    <div>
+      <h1 className={styles.logo}>The Diner</h1>
     </div>
   )
 }

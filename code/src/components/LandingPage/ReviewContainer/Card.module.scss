@@ -2,11 +2,12 @@
 
 .container {
   width: 75%;
-}
-.name {
-  color: #1c6e8e;
-  text-transform: capitalize;
-}
-.quote {
-  color: $font-color;
+  @media (min-width: $layout-breakpoint-small) {
+    padding: 0.5rem;
+  }
+
+  h4 {
+    color: #1c6e8e;
+    text-transform: capitalize;
+  }
 }

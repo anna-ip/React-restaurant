@@ -1,12 +1,12 @@
-// footers styles
+@import '../../styles/_variables.scss';
+
 .footerContainer {
-  //background: url('../../images/pexels-pixabay-235985.jpg');
-  background-color: #373737;
-  color: #fff;
+  background-color: $dark-color;
+  color: $base-color;
   padding: 1rem;
   margin: 0;
 }
-
 .logo {
+  color: $base-color;
   text-decoration: overline;
 }

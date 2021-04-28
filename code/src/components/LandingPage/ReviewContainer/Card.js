@@ -4,8 +4,8 @@ import styles from './Card.module.scss'
 const Card = ({ quote }) => {
   return (
     <div className={styles.container}>
-      <h4 className={styles.name}>{quote.name}</h4>
-      <p className={styles.quote}>{quote.text}</p>
+      <h4>{quote.name}</h4>
+      <p>{quote.text}</p>
     </div>
   )
 }
