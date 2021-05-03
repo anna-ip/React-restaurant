@@ -6,6 +6,7 @@ import styles from './Reviews.module.scss'
 
 const Reviews = () => {
   const [storeReviews] = useContext(ReviewContext)
+  console.log(storeReviews)
   const reviews = storeReviews.reviews
 
   const [reviewData, setReviewData] = useState(reviews)

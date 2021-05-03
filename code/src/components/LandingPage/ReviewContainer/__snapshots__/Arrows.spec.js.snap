@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders correctly 1`] = `
+Array [
+  <button
+    className="prev"
+  >
+    <span>
+      ←
+    </span>
+  </button>,
+  <button
+    className="next"
+  >
+    <span>
+      →
+    </span>
+  </button>,
+]
+`;

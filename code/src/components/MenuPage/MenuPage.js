@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
-import { Link } from 'react-router-dom'
 import { MenuContext } from '../../App'
+import Links from '../Links'
 import FilterBtn from './FilterBtn'
 import MenuCard from './MenuCard'
 import styles from './MenuPage.module.scss'
@@ -24,7 +24,7 @@ const MenuPage = () => {
 
   return (
     <div className={styles.container}>
-      <Link to="/" className={styles.link}>Go to home page</Link>
+      <Links to={'/'} text={'Go to home page'} className={styles.link} />
 
       <h2>Menu</h2>
       <div className={styles.btnContainer}>

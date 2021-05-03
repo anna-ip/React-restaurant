@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LandingPage/> renders correctly using enzyme 1`] = `
+<div
+  className="landingpageContainer"
+>
+  <div
+    className="linkContainer"
+  >
+    <Links
+      text="Take me to the"
+      to="/menu"
+    />
+    <Links
+      text="Menu"
+      to="/menu"
+    />
+  </div>
+  <img
+    alt="restaurant"
+    className="img"
+    src="pexels-emre-can-2079438.jpg"
+  />
+  <Reviews />
+</div>
+`;

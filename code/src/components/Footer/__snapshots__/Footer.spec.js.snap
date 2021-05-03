@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render correctly 1`] = `
+<div
+  className="footerContainer"
+>
+  <h2
+    className="logo"
+  >
+    The Diner
+  </h2>
+  <p>
+    Luddingsbo Mekanikusv 54, 129 88 Stockholm
+  </p>
+  <p>
+    08-5754933
+  </p>
+</div>
+`;

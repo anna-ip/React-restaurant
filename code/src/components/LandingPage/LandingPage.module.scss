@@ -8,23 +8,6 @@
   @include flexCenter;
   justify-content: center;
   height: 5rem;
-
-  .link,
-  .menu {
-    color: $red-color;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  .link {
-    font-size: 1.2rem;
-  }
-  .menu {
-    font-size: 1.5rem;
-  }
 }
 .img {
   width: 90%;
