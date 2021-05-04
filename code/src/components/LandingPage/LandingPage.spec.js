@@ -12,9 +12,6 @@ test('<LandingPage/> renders correctly using enzyme', () => {
   expect(toJson(tree)).toMatchSnapshot()
 })
 
-// test('Render correctly', () => {
-//   // TypeError: Cannot read property 'reviews' of undefined
-//   // const tree = renderer.create(<LandingPage />).toJSON()
-//   // console.log(tree)
-//   // expect(tree).toMatchSnapshot()
-// })
+//? Test there are links?
+//? Test there is an image?
+//? Test Review component?
