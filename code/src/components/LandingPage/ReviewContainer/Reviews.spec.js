@@ -14,7 +14,7 @@ import Reviews from './Reviews'
 //   expect(toJson(tree)).toMatchSnapshot()
 // })
 
-test('<Reviews/> renders correctly', () => {
+test.skip('<Reviews/> renders correctly', () => {
   // const tree = renderer
   //   .create(
   //     <Reviews storeReviews={{ reviews: { id: 1, name: 'susan', text: '' } }} />

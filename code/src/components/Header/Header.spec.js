@@ -8,7 +8,12 @@ test('<Header/> renders correctly', () => {
   expect(tree).toMatchSnapshot()
 })
 
-test('conatins the Restaurant name', () => {
+test('<Header/> has a heading with the Restaurant name', () => {
+  render(<Header />)
+  expect(screen.getByRole('heading', { name: 'The Diner' })).toBeInTheDocument()
+})
+
+test('<Header/> contains the Restaurant name', () => {
   render(<Header />)
   expect(screen.getByText('The Diner')).toBeInTheDocument()
 })

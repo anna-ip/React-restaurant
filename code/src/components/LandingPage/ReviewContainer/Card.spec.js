@@ -1,3 +1,4 @@
+import { render, screen } from '@testing-library/react'
 import React from 'react'
 import renderer from 'react-test-renderer'
 import Card from './Card'
@@ -7,4 +8,7 @@ test('<Card/> renders correctly', () => {
   expect(tree).toMatchSnapshot()
 })
 
-//? test for the content or props
+test('<Card/> render name', () => {
+  render(<Card quote={{ name: 'Bob', text: 'Lorem ipsum' }} />)
+  expect(screen.getByRole('heading')).toHaveTextContent('Bob')
+})
