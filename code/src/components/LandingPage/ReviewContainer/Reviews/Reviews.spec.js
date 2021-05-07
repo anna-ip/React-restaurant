@@ -7,7 +7,7 @@ import { mount, shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
 beforeEach(() => {
-  // might need to mock useState and usseEffect aswell
+  // might need to mock useState and useEffect aswell
   //the useeffect mock?
   const reviewState = jest
     .spyOn(React, 'useState')
