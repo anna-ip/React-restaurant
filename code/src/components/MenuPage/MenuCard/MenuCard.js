@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './MenuCard.module.scss'
 
 const MenuCard = ({ filteredMenu }) => {
+  //console.log(JSON.stringify(filteredMenu))
   return (
     <>
       {filteredMenu &&

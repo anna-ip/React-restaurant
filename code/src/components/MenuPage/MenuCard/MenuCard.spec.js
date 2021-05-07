@@ -1,24 +1,8 @@
-import * as React from 'react'
-import { getByRole, render, screen } from '@testing-library/react'
+import React from 'react'
 import renderer from 'react-test-renderer'
-import MenuPage from './MenuPage'
-import { MenuContext } from '../../App'
-import { shallow } from 'enzyme'
+import MenuCard from './MenuCard'
 
-// const menus = jest.fn()
-// const menu = {
-//   id: 1,
-//   title: 'buttermilk pancakes',
-//   category: 'breakfast',
-//   price: '250kr',
-//   img: 'pexels-ash-376464.jpg',
-//   desc:
-//     "I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed ",
-// }
-
-jest.spyOn(React, 'useState').mockReturnValue([undefined, jest.fn()])
-
-jest.spyOn(React, 'useContext').mockReturnValue([
+const mockFilteredMenus = [
   {
     id: 1,
     title: 'buttermilk pancakes',
@@ -109,21 +93,22 @@ jest.spyOn(React, 'useContext').mockReturnValue([
     desc:
       'skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.',
   },
-])
+]
 
-describe('<MenuPage/>', () => {
-  test.skip('Render Correctly', () => {
-    const wrapper = shallow(<MenuPage />)
-    expect(wrapper).toMatchSnapshot()
+describe('<MenuCard/>', () => {
+  test('Renders when no data is provided', () => {
+    const tree = renderer.create(<MenuCard />).toJSON()
+    expect(tree).toMatchSnapshot()
   })
 
-  // test.skip('<MenuPage/> has a heading that displays Menu', () => {
-  //   render(
-  //     <MenuContext.Provider value={{ menus }}>
-  //       <MenuPage />
-  //     </MenuContext.Provider>
-  //   )
-  //   expect(getByRole('heading', { name: 'Menu' })).toBeInTheDocument()
-  //   screen.debug()
-  // })
+  test('Renders when data is provided', () => {
+    const tree = renderer
+      .create(<MenuCard filteredMenu={mockFilteredMenus} />)
+      .toJSON()
+    expect(tree).toMatchSnapshot()
+  })
+
+  // Test image render?
+  // Test props?
+  // Test title price desc?
 })

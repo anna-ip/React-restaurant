@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Arrows/> renders correctly 1`] = `
+exports[`<Arrows/> Renders correctly 1`] = `
 Array [
   <button
     className="prev"

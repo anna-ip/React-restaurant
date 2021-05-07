@@ -1,10 +1,7 @@
 import React from 'react'
 import App from './App'
-
-import { configure, shallow } from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
+import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
-configure({ adapter: new Adapter() })
 
 test('<App/> renders correctly using enzyme', () => {
   const tree = shallow(<App />)

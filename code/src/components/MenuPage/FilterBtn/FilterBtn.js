@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { MenuContext } from '../../App'
+import { MenuContext } from '../../../App'
 import styles from './FilterBtn.module.scss'
 
 const FilterBtn = ({ filterMenuClick }) => {

@@ -1,28 +1,29 @@
-import React, { useContext, useState, useEffect } from 'react'
-import { ReviewContext } from '../../../App'
-import Card from './Card'
-import Arrows from './Arrows'
+import React, { useState, useEffect, useContext } from 'react'
+import { ReviewContext } from '../../../../App'
+import Card from '../Card/Card'
+import Arrows from '../Arrows/Arrows'
 import styles from './Reviews.module.scss'
 
 const Reviews = () => {
   const [storeReviews] = useContext(ReviewContext)
-  console.log(storeReviews)
   const reviews = storeReviews.reviews
+  //console.log(JSON.stringify(reviews))
 
-  const [reviewData, setReviewData] = useState(reviews)
   const [current, setCurrent] = useState(0)
-  const [quote, getQuote] = useState(reviewData[current])
+  console.log('current', current)
+  const [quote, getQuote] = useState(reviews[current])
+  console.log('quote', quote)
 
   useEffect(() => {
-    getQuote(reviewData[current])
-  }, [current, reviewData, quote])
+    getQuote(reviews[current])
+  }, [current, reviews, quote])
 
   const nextReview = () => {
-    current === reviewData.length - 1 ? setCurrent(0) : setCurrent(current + 1)
+    current === reviews.length - 1 ? setCurrent(0) : setCurrent(current + 1)
   }
 
   const prevRewiev = () => {
-    current === 0 ? setCurrent(reviewData.length - 1) : setCurrent(current - 1)
+    current === 0 ? setCurrent(reviews.length - 1) : setCurrent(current - 1)
   }
 
   return (

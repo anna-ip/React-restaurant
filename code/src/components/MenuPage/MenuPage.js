@@ -1,12 +1,12 @@
 import React, { useContext, useState } from 'react'
 import { MenuContext } from '../../App'
-import Links from '../Links'
-import FilterBtn from './FilterBtn'
-import MenuCard from './MenuCard'
+import Links from '../Links/Links'
+import FilterBtn from './FilterBtn/FilterBtn'
+import MenuCard from './MenuCard/MenuCard'
 import styles from './MenuPage.module.scss'
 
 const MenuPage = () => {
-  const [storeMenus] = useContext(MenuContext)
+  const [storeMenus] = React.useContext(MenuContext)
   const menus = storeMenus.menus
 
   const [filteredMenu, setFilteredMenu] = useState(menus || [])

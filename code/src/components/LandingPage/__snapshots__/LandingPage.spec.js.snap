@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<LandingPage/> renders correctly using enzyme 1`] = `
+exports[`<LandingPage/> Renders correctly using enzyme 1`] = `
 <div
-  className="landingpageContainer"
+  className="landingPageContainer"
 >
   <div
     className="linkContainer"
