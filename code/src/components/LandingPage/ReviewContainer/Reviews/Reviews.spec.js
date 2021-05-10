@@ -1,21 +1,14 @@
-import * as React from 'react'
-import renderer from 'react-test-renderer'
-import { render } from '@testing-library/react'
+import React from 'react'
 import Reviews from './Reviews'
+import { shallow } from 'enzyme'
 
-import { mount, shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
+jest.mock('React', () => ({
+  ...jest.requireActual('React'),
+  useContext: () => [fakeContext],
+}))
 
-beforeEach(() => {
-  // might need to mock useState and useEffect aswell
-  //the useeffect mock?
-  const reviewState = jest
-    .spyOn(React, 'useState')
-    .mockReturnValueOnce([undefined, jest.fn()])
-    .mockReturnValueOnce([0, jest.fn()])
-  //console.log(reviewState(), reviewState())
-
-  jest.spyOn(React, 'useContext').mockReturnValue([
+const fakeContext = {
+  reviews: [
     {
       id: 1,
       name: 'susan smith',
@@ -40,16 +33,16 @@ beforeEach(() => {
       text:
         'Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic.',
     },
-  ])
-})
+  ],
+}
 
 afterEach(() => {
   jest.clearAllMocks()
 })
 
 describe('<Reviews/>', () => {
-  test.skip('<Renders correctly using enzyme', () => {
+  test('<Renders correctly using enzyme', () => {
     const wrapper = shallow(<Reviews />)
-    expect(wrapper.state('current')).toEqual(0)
+    expect(wrapper).toMatchSnapshot()
   })
 })

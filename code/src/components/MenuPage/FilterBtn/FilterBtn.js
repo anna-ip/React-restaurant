@@ -17,18 +17,26 @@ const FilterBtn = ({ filterMenuClick }) => {
 
   return (
     <>
-      {filteredBtn.map((section, index) => (
-        <button
-          onClick={(e) => filterMenuClick(e)}
-          value={section.category || 'all'}
-          key={index}
-          className={styles.btn}
-        >
-          {section.category || 'all'}
-        </button>
-      ))}
+      {filteredBtn.map((section, index) => {
+        const category = getCategoryFromSection(section)
+
+        return (
+          <button
+            onClick={(e) => filterMenuClick(e)}
+            value={category}
+            key={index}
+            className={styles.btn}
+          >
+            {category}
+          </button>
+        )
+      })}
     </>
   )
+}
+
+export const getCategoryFromSection = (section) => {
+  return section?.category || 'all'
 }
 
 export default FilterBtn

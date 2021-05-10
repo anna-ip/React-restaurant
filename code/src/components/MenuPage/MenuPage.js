@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React from 'react'
 import { MenuContext } from '../../App'
 import Links from '../Links/Links'
 import FilterBtn from './FilterBtn/FilterBtn'
@@ -8,17 +8,16 @@ import styles from './MenuPage.module.scss'
 const MenuPage = () => {
   const [storeMenus] = React.useContext(MenuContext)
   const menus = storeMenus.menus
-
-  const [filteredMenu, setFilteredMenu] = useState(menus || [])
+  const [filteredMenu, setFilteredMenu] = React.useState(menus || [])
 
   const filterMenuClick = (e) => {
     const btnValue = e.target.value
-    const filteredMenus = menus.filter((cat) => cat.category === btnValue)
 
     if (btnValue === 'all') {
       setFilteredMenu(menus)
     } else {
-      setFilteredMenu(filteredMenus)
+      const filteredMenuItems = filterMenus(menus, btnValue)
+      setFilteredMenu(filteredMenuItems)
     }
   }
 
@@ -35,6 +34,10 @@ const MenuPage = () => {
       </section>
     </div>
   )
+}
+
+export const filterMenus = (menus, val) => {
+  return menus.filter((menu) => menu.category === val)
 }
 
 export default MenuPage

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MenuPage/> Render Correctly 1`] = `
+<div
+  className="container"
+>
+  <Links
+    className="link"
+    text="Go to home page"
+    to="/"
+  />
+  <h2>
+    Menu
+  </h2>
+  <div
+    className="btnContainer"
+  >
+    <FilterBtn
+      filterMenuClick={[Function]}
+    />
+  </div>
+  <section
+    className="cardContainer"
+  >
+    <MenuCard
+      filteredMenu={
+        Array [
+          Object {
+            "category": "breakfast",
+            "desc": "I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed ",
+            "id": 1,
+            "img": "pexels-ash-376464.jpg",
+            "price": "250kr",
+            "title": "buttermilk pancakes Gurka",
+          },
+          Object {
+            "category": "lunch",
+            "desc": "I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed ",
+            "id": 2,
+            "img": "pexels-ash-376464.jpg",
+            "price": "250kr",
+            "title": "biff rydberg",
+          },
+        ]
+      }
+    />
+  </section>
+</div>
+`;

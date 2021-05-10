@@ -1,8 +1,8 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
+import { shallow } from 'enzyme'
 import MenuCard from './MenuCard'
 
-const mockFilteredMenus = [
+export const mockFilteredMenus = [
   {
     id: 1,
     title: 'buttermilk pancakes',
@@ -97,14 +97,12 @@ const mockFilteredMenus = [
 
 describe('<MenuCard/>', () => {
   test('Renders when no data is provided', () => {
-    const tree = renderer.create(<MenuCard />).toJSON()
+    const tree = shallow(<MenuCard />)
     expect(tree).toMatchSnapshot()
   })
 
   test('Renders when data is provided', () => {
-    const tree = renderer
-      .create(<MenuCard filteredMenu={mockFilteredMenus} />)
-      .toJSON()
+    const tree = shallow(<MenuCard filteredMenu={mockFilteredMenus} />)
     expect(tree).toMatchSnapshot()
   })
 

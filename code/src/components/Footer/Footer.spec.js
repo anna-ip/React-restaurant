@@ -10,7 +10,6 @@ describe('<Footer/>', () => {
     expect(tree).toMatchSnapshot()
   })
 
-  // test that the Footer component contains adress and phone no
   test('Check the name', () => {
     const wrapper = shallow(<Footer />)
     const heading = wrapper.find('h2')

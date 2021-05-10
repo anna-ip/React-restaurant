@@ -7,12 +7,8 @@ import styles from './Reviews.module.scss'
 const Reviews = () => {
   const [storeReviews] = useContext(ReviewContext)
   const reviews = storeReviews.reviews
-  //console.log(JSON.stringify(reviews))
-
   const [current, setCurrent] = useState(0)
-  console.log('current', current)
   const [quote, getQuote] = useState(reviews[current])
-  console.log('quote', quote)
 
   useEffect(() => {
     getQuote(reviews[current])
