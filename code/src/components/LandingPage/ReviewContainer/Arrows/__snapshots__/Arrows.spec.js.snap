@@ -1,20 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Arrows/> Renders correctly 1`] = `
-Array [
+<Fragment>
   <button
     className="prev"
   >
     <span>
       ←
     </span>
-  </button>,
+  </button>
   <button
     className="next"
   >
     <span>
       →
     </span>
-  </button>,
-]
+  </button>
+</Fragment>
 `;

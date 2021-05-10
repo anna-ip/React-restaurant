@@ -1,6 +1,6 @@
+import React from 'react'
 import { render, screen } from '@testing-library/react'
 import { shallow } from 'enzyme'
-import React from 'react'
 import Card from './Card'
 
 const quote = {
@@ -12,8 +12,8 @@ const quote = {
 
 describe('<Card/>', () => {
   test('Renders correctly with enzyme', () => {
-    const tree = shallow(<Card quote={quote} />)
-    expect(tree).toMatchSnapshot()
+    const wrapper = shallow(<Card quote={quote} />)
+    expect(wrapper).toMatchSnapshot()
   })
 
   // returns undefined

@@ -1,13 +1,12 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
 import { render, screen } from '@testing-library/react'
 import { shallow } from 'enzyme'
 import Footer from './Footer'
 
 describe('<Footer/>', () => {
   test('Renders correctly', () => {
-    const tree = renderer.create(<Footer />).toJSON()
-    expect(tree).toMatchSnapshot()
+    const wrapper = shallow(<Footer />)
+    expect(wrapper).toMatchSnapshot()
   })
 
   test('Check the name', () => {

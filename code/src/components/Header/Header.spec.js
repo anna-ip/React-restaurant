@@ -1,23 +1,22 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
 import { render, screen } from '@testing-library/react'
 import { shallow } from 'enzyme'
 import Header from './Header'
 
 describe('<Header/>', () => {
-  test('<Header/> renders correctly', () => {
-    const tree = renderer.create(<Header />).toJSON()
-    expect(tree).toMatchSnapshot()
+  test('Renders correctly', () => {
+    const wrapper = shallow(<Header />)
+    expect(wrapper).toMatchSnapshot()
   })
 
-  test('<Header/> has a heading with the Restaurant name', () => {
+  test('Has a heading with the Restaurant name', () => {
     render(<Header />)
     expect(
       screen.getByRole('heading', { name: 'The Diner' })
     ).toBeInTheDocument()
   })
 
-  test('<Header/> contains the Restaurant name', () => {
+  test('Contains the Restaurant name', () => {
     const wrapper = shallow(<Header />)
     const heading = wrapper.find('h1')
     const result = heading.text()

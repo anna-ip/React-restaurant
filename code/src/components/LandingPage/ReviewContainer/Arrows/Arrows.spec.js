@@ -1,26 +1,27 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
 import { shallow } from 'enzyme'
 import Arrows from './Arrows'
 
 //const clickFn = jest.fn()
 
+const setup = () => shallow(<Arrows />)
+
 describe('<Arrows/>', () => {
   test('Renders correctly', () => {
-    const tree = renderer.create(<Arrows />).toJSON()
-    expect(tree).toMatchSnapshot()
+    const wrapper = setup()
+    expect(wrapper).toMatchSnapshot()
   })
 
-  test('Renders two buttons', () => {
-    const wrapper = shallow(<Arrows />)
+  test('Renders two buttons/arrows', () => {
+    const wrapper = setup()
     const buttons = wrapper.find('button')
     expect(buttons.length).toBe(2)
   })
 
-  //test btn click ?
-  // test.skip('click have been called', () => {
-  //   const component = shallow(<Arrows onClick={clickFn} />)
-  //   component.find('button.prev').simulate('click')
-  //   expect(clickFn).toHaveBeenCalled()
-  // })
+  test('click have been clicked', () => {
+    const component = shallow(<Arrows />)
+    const button = component.find('button.prev')
+    button.simulate('click')
+    expect(component.find('button.prev').length).toEqual(1)
+  })
 })

@@ -1,7 +1,6 @@
 import * as React from 'react'
 import FilterBtn, { getCategoryFromSection } from './FilterBtn'
-import { mount } from 'enzyme'
-import toJson from 'enzyme-to-json'
+import { shallow } from 'enzyme'
 
 import { mockFilteredMenus } from '../MenuCard/MenuCard.spec'
 
@@ -15,8 +14,9 @@ afterEach(() => {
 
 describe('<Filterbtn/>', () => {
   test.skip('render correctly', () => {
-    const wrapper = mount(<FilterBtn />)
-    expect(toJson(wrapper)).toMatchSnapshot()
+    const wrapper = shallow(<FilterBtn />)
+    console.log(wrapper).debug()
+    //expect(wrapper).toMatchSnapshot()
   })
 })
 
