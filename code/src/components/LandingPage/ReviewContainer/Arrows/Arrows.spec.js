@@ -2,8 +2,6 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import Arrows from './Arrows'
 
-//const clickFn = jest.fn()
-
 const setup = () => shallow(<Arrows />)
 
 describe('<Arrows/>', () => {
@@ -18,10 +16,17 @@ describe('<Arrows/>', () => {
     expect(buttons.length).toBe(2)
   })
 
-  test('click have been clicked', () => {
-    const component = shallow(<Arrows />)
+  test('prev btn have been clicked', () => {
+    const component = setup()
     const button = component.find('button.prev')
     button.simulate('click')
     expect(component.find('button.prev').length).toEqual(1)
+  })
+
+  test('next btn have been clicked', () => {
+    const component = setup()
+    const button = component.find('button.next')
+    button.simulate('click')
+    expect(component.find('button.next').length).toEqual(1)
   })
 })

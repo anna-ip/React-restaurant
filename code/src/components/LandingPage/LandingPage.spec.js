@@ -1,9 +1,8 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
-import { render, screen } from '@testing-library/react'
 import LandingPage from './LandingPage'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { shallow } from 'enzyme'
+import Links from '../Links/Links'
 
 describe('<LandingPage/>', () => {
   test('Renders correctly using enzyme', () => {
@@ -11,16 +10,11 @@ describe('<LandingPage/>', () => {
     expect(tree).toMatchSnapshot()
   })
 
-  //Problems with reviews/context
-  test.skip('<LandingPage/> renders the correct image', () => {
-    renderer.create(
-      <Router>
-        <LandingPage />
-      </Router>
-    )
-    const img = screen.getAllByAltText('restaurant')
-    //not sure I can use this as src?
-    expect(img.src).toEqual('../../images/pexels-emre-can-2079438.jpg')
+  test('Simulate Link click', () => {
+    const component = shallow(<LandingPage />)
+    const Link = component.find(Links).last()
+    Link.simulate('click')
+    expect(component.find(Links).length).toBe(2)
   })
 
   // Test Review component?

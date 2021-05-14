@@ -2,6 +2,6 @@
 
 exports[`<Links/> Render correctly 1`] = `
 <ForwardRef(Link)
-  className={null}
+  className="styledLink"
 />
 `;

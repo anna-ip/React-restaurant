@@ -6,7 +6,7 @@ const Links = (props) => {
   const { to, text } = props
   //console.log('text', JSON.stringify(props))
   return (
-    <Link to={to} className={styles}>
+    <Link to={to} className={styles.styledLink}>
       {text}
     </Link>
   )

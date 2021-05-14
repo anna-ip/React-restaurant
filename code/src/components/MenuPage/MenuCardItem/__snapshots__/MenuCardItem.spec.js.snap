@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MenuCardItem/> Renders correctly 1`] = `
+<div
+  className="container"
+>
+  <img
+    alt="dish"
+    className="img"
+    height="150vw"
+    src="assets/pexels-alexander-mils-2103945.jpg"
+    width="150vw"
+  />
+  <section
+    className="section"
+  >
+    <div
+      className="titleContainer"
+    >
+      <p
+        className="title"
+      >
+        quarantine buddy
+      </p>
+      <p>
+        100kr
+      </p>
+    </div>
+    <p
+      className="desc"
+    >
+      skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.
+    </p>
+  </section>
+</div>
+`;
