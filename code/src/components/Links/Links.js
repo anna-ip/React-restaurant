@@ -4,7 +4,7 @@ import styles from './Links.module.scss'
 
 const Links = (props) => {
   const { to, text } = props
-  //console.log('text', JSON.stringify(props))
+
   return (
     <Link to={to} className={styles.styledLink}>
       {text}

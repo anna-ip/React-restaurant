@@ -3,7 +3,7 @@
 .container {
   width: 75%;
   @media (min-width: $layout-breakpoint-small) {
-    padding: 0.5rem;
+    padding: 1.5rem 0.5rem;
   }
 
   h4 {

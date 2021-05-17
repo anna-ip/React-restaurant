@@ -4,7 +4,7 @@
 .next {
   display: block;
   position: absolute;
-  top: 198px;
+  top: 177px;
   background-color: inherit;
   border: none;
   font-size: 6.4vw;
@@ -12,6 +12,7 @@
 
   @media (min-width: $layout-breakpoint-small) {
     font-size: 4vw;
+    top: 198px;
   }
 }
 .prev {

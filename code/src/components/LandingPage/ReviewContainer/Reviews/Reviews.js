@@ -1,26 +1,15 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useContext } from 'react'
 import { ReviewContext } from '../../../../App'
 import Card from '../Card/Card'
 import Arrows from '../Arrows/Arrows'
 import styles from './Reviews.module.scss'
+import useCurrent from '../../../utils/useCurrent'
 
 const Reviews = () => {
   const [storeReviews] = useContext(ReviewContext)
   const reviews = storeReviews.reviews
-  const [current, setCurrent] = useState(0)
-  const [quote, getQuote] = useState(reviews[current])
 
-  useEffect(() => {
-    getQuote(reviews[current])
-  }, [current, reviews, quote])
-
-  const nextReview = () => {
-    current === reviews.length - 1 ? setCurrent(0) : setCurrent(current + 1)
-  }
-
-  const prevRewiev = () => {
-    current === 0 ? setCurrent(reviews.length - 1) : setCurrent(current - 1)
-  }
+  const [nextReview, prevReview, quote] = useCurrent(reviews)
 
   return (
     <div className={styles.container}>
@@ -28,7 +17,7 @@ const Reviews = () => {
       <section>
         <span className={styles.qoutes}>,,</span>
         <Card quote={quote} />
-        <Arrows nextReview={nextReview} prevRewiev={prevRewiev} />
+        <Arrows nextReview={nextReview} prevRewiev={prevReview} />
       </section>
     </div>
   )
