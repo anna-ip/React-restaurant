@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const useCurrent = (data) => {
+const useCarousel = (data) => {
   const [current, setCurrent] = useState(0)
   const [quote, getQuote] = useState(data[current])
 
@@ -12,11 +12,11 @@ const useCurrent = (data) => {
     current === data.length - 1 ? setCurrent(0) : setCurrent(current + 1)
   }
 
-  const prevRewiev = () => {
+  const prevReview = () => {
     current === 0 ? setCurrent(data.length - 1) : setCurrent(current - 1)
   }
 
-  return [nextReview, prevRewiev, quote]
+  return [nextReview, prevReview, quote]
 }
 
-export default useCurrent
+export default useCarousel
