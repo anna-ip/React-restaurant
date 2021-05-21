@@ -2,6 +2,7 @@
 
 exports[`<Header/> Renders correctly 1`] = `
 <div>
+  <NavBar />
   <h1
     className="logo"
   >

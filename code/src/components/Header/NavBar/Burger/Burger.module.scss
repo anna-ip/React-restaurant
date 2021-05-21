@@ -1,0 +1,81 @@
+@import '../../../../styles/_variables.scss';
+@import '../../../../styles/mixins';
+
+.menuBtn {
+  @media (max-width: $layout-breakpoint-small) {
+    position: absolute;
+    z-index: 3;
+    right: 1rem;
+    top: 1.2rem;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    @include transition-ease;
+
+    // middle line of the burger
+    .burger {
+      position: absolute;
+      right: 0;
+      top: 0.5rem;
+      width: 28px;
+      height: 3px;
+      background: $red-color;
+      @include transition-ease;
+
+      // top line of the burger
+      &:before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: -8px;
+        width: 28px;
+        height: 3px;
+        background: $red-color;
+        @include transition-ease;
+      }
+
+      // bottom line of the burger
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 8px;
+        width: 20px;
+        height: 3px;
+        background: $red-color;
+        @include transition-ease;
+      }
+    }
+
+    .burgerOpen {
+      transform: rotate(120deg);
+      background: transparent;
+
+        &:before {
+          content: '';
+          position: absolute;
+          right: 0;
+          top: -8px;
+          width: 28px;
+          height: 3px;
+          background: $red-color;
+          @include transition-ease;
+          transform: rotate(45deg) translate(5px, 8px);
+        }
+        
+         // bottom line of the burger
+        &:after {
+          width: 28px;
+          content: '';
+          position: absolute;
+          right: 0;
+          top: 8px;
+          width: 28px;
+          height: 3px;
+          background: $red-color;
+          @include transition-ease;
+          transform: rotate(-45deg) translate(3px, -7px);
+        }
+    }
+  }
+}

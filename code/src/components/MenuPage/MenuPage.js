@@ -1,6 +1,5 @@
 import React from 'react'
 import { MenuContext } from '../../App'
-import Links from '../Links/Links'
 import FilterBtn from './FilterBtn/FilterBtn'
 import MenuCard from './MenuCard/MenuCard'
 import styles from './MenuPage.module.scss'
@@ -23,8 +22,6 @@ const MenuPage = () => {
 
   return (
     <div className={styles.container}>
-      <Links to={'/'} text={'Go to home page'} className={styles.link} />
-
       <h2>Menu</h2>
       <div className={styles.btnContainer}>
         <FilterBtn filterMenuClick={filterMenuClick} />
