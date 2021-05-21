@@ -4,11 +4,6 @@ exports[`<MenuPage/> Render Correctly 1`] = `
 <div
   className="container"
 >
-  <Links
-    className="link"
-    text="Go to home page"
-    to="/"
-  />
   <h2>
     Menu
   </h2>

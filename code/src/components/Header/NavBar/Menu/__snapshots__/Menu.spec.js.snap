@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Menu/> Menu render correctly 1`] = `
+<div>
+  <nav
+    className={
+      Array [
+        "nav",
+      ]
+    }
+  >
+    <ul
+      className={
+        Array [
+          "menuNav",
+        ]
+      }
+    >
+      <li
+        className="menuNavItem"
+      >
+        <Links
+          text="Home"
+          to="/"
+        >
+          Home
+        </Links>
+        <Links
+          text="Menu"
+          to="/menu"
+        >
+          Menu
+        </Links>
+        <Links
+          text="About"
+          to="/"
+        >
+          About
+        </Links>
+        <Links
+          text="Contact"
+          to="/"
+        >
+          Contact
+        </Links>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;

@@ -11,7 +11,7 @@ describe('<LandingPage/>', () => {
     expect(tree).toMatchSnapshot()
   })
 
-  test('Simulate Link click', () => {
+  test.skip('Simulate Link click', () => {
     const component = shallow(<LandingPage />)
     const Link = component.find(Links).last()
     Link.simulate('click')

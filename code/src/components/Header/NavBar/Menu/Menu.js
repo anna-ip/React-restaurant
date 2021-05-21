@@ -15,7 +15,7 @@ function Menu({ open, setOpen}) {
             <Links to={'/'} text={'Home'} >
               Home
             </Links>
-            <Links to={'/menu'} text={'Menu'}>
+            <Links to={'/menu'} text={'Menu'} >
               Menu
             </Links>
             <Links to={'/'} text={'About'}>

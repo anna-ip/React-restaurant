@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Burger/> Burger render 1`] = `
+<Fragment>
+  <div
+    className="menuBtn"
+    onClick={[Function]}
+  >
+    <span
+      className={
+        Array [
+          "burger",
+        ]
+      }
+    />
+  </div>
+</Fragment>
+`;

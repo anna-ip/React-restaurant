@@ -4,18 +4,6 @@ exports[`<LandingPage/> Renders correctly using enzyme 1`] = `
 <div
   className="landingPageContainer"
 >
-  <div
-    className="linkContainer"
-  >
-    <Links
-      text="Take me to the"
-      to="/menu"
-    />
-    <Links
-      text="Menu"
-      to="/menu"
-    />
-  </div>
   <img
     alt="restaurant"
     className="img"
