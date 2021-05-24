@@ -22,7 +22,6 @@ const MenuPage = () => {
 
   return (
     <div className={styles.container}>
-      <h2>Menu</h2>
       <div className={styles.btnContainer}>
         <FilterBtn filterMenuClick={filterMenuClick} />
       </div>
