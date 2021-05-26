@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<Links/> Render correctly 1`] = `
-<ForwardRef(Link)
-  className="styledLink"
-/>
-`;

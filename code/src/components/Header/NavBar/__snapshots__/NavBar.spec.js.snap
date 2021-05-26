@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavBar/> Renders correctly 1`] = `
+<Fragment>
+  <Burger
+    open={false}
+    setOpen={[Function]}
+  />
+  <Menu
+    open={false}
+    setOpen={[Function]}
+  />
+</Fragment>
+`;
