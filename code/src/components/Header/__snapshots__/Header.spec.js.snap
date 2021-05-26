@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Header/> Renders correctly 1`] = `
-<div>
+<Fragment>
   <NavBar />
   <h1
     className="logo"
   >
     The Diner
   </h1>
-</div>
+</Fragment>
 `;

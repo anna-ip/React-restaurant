@@ -4,9 +4,6 @@ exports[`<MenuPage/> Render Correctly 1`] = `
 <div
   className="container"
 >
-  <h2>
-    Menu
-  </h2>
   <div
     className="btnContainer"
   >

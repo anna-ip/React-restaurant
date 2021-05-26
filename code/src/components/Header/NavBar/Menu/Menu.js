@@ -1,33 +1,18 @@
 import React from 'react'
 import styles from './Menu.module.scss'
-import Links from '../../../Links/Links'
+import Buttons from './Links/Buttons'
 
-function Menu({ open, setOpen}) {
-
+function Menu({ open, setOpen }) {
   return (
-    <div>
-      <nav
-        open={open}
-        className={!open ? [styles.nav] : [styles.navOpen]}
-      >
+    <>
+      <nav open={open} className={!open ? [styles.nav] : [styles.navOpen]}>
         <ul className={!open ? [styles.menuNav] : [styles.menuNavOpen]}>
           <li className={styles.menuNavItem}>
-            <Links to={'/'} text={'Home'} >
-              Home
-            </Links>
-            <Links to={'/menu'} text={'Menu'} >
-              Menu
-            </Links>
-            <Links to={'/'} text={'About'}>
-              About
-            </Links>
-            <Links to={'/'} text={'Contact'}>
-              Contact
-            </Links>
+            <Buttons open={open} setOpen={setOpen} />
           </li>
         </ul>
       </nav>
-    </div>
+    </>
   )
 }
 

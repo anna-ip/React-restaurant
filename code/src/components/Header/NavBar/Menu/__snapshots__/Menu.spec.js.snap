@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Menu/> Menu render correctly 1`] = `
-<div>
+<Fragment>
   <nav
     className={
       Array [
@@ -19,32 +19,9 @@ exports[`<Menu/> Menu render correctly 1`] = `
       <li
         className="menuNavItem"
       >
-        <Links
-          text="Home"
-          to="/"
-        >
-          Home
-        </Links>
-        <Links
-          text="Menu"
-          to="/menu"
-        >
-          Menu
-        </Links>
-        <Links
-          text="About"
-          to="/"
-        >
-          About
-        </Links>
-        <Links
-          text="Contact"
-          to="/"
-        >
-          Contact
-        </Links>
+        <Buttons />
       </li>
     </ul>
   </nav>
-</div>
+</Fragment>
 `;
