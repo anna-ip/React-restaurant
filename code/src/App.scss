@@ -3,12 +3,12 @@
 @import './components/Nav/Menu/Menu.module.scss';
 @import './components/Nav/Menu/Links/Buttons.module.scss';
 @import './page-components/Footer/Footer.module.scss';
-@import './components/MenuPage/MenuCardItem/MenuCardItem.module.scss';
+@import './components/MenuPageComponents/MenuCardItem/MenuCardItem.module.scss';
 @import './pages/Menu/MenuPage.module.scss';
-@import './components/LandingPage/ReviewContainer/Reviews/Reviews.module.scss';
+@import './components/ReviewComponents/REviewComponents/Reviews/Reviews.module.scss';
 @import './pages/LandingPage/LandingPage.module.scss';
-@import './components/LandingPage/ReviewContainer/Card/Card.module.scss';
-@import './components/LandingPage/ReviewContainer/Arrows/Arrows.module.scss';
+@import './components/ReviewComponents/REviewComponents//Card/Card.module.scss';
+@import './components/ReviewComponents/REviewComponents//Arrows/Arrows.module.scss';
 @import './styles/_variables.scss';
 
 body {

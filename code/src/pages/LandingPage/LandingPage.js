@@ -1,5 +1,5 @@
 import React from 'react'
-import Reviews from '../../components/LandingPage/ReviewContainer/Reviews/Reviews'
+import Reviews from '../../components/ReviewComponents/REviewComponents/Reviews/Reviews'
 import styles from './LandingPage.module.scss'
 import mainImage from '../../images/pexels-emre-can-2079438.jpg'
 
