@@ -1,7 +1,8 @@
-@import '../../../../../styles/variables';
-@import '../../../../../styles/mixins';
+@import '../../../../styles/variables';
+@import '../../../../styles/mixins';
 
 .styledLink {
+  cursor: pointer;
   color: $red-color;
   text-decoration: none;
   border: none;

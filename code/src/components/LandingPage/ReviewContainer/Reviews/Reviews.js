@@ -3,7 +3,7 @@ import { ReviewContext } from '../../../../App'
 import Card from '../Card/Card'
 import Arrows from '../Arrows/Arrows'
 import styles from './Reviews.module.scss'
-import useCarousel from '../../../utils/useCarousel'
+import useCarousel from '../../../../hooks/useCarousel'
 
 const Reviews = () => {
   const [storeReviews] = useContext(ReviewContext)

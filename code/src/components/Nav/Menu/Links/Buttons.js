@@ -1,6 +1,6 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
-import useViewPort from '../../../../utils/useViewport'
+import useViewPort from '../../../../hooks/useViewport'
 import styles from './Buttons.module.scss'
 
 const Buttons = ({ open, setOpen }) => {

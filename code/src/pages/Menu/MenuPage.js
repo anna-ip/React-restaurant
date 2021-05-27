@@ -1,7 +1,7 @@
 import React from 'react'
 import { MenuContext } from '../../App'
-import FilterBtn from './FilterBtn/FilterBtn'
-import MenuCard from './MenuCard/MenuCard'
+import FilterBtn from '../../components/MenuPage/FilterBtn/FilterBtn'
+import MenuCard from '../../components/MenuPage/MenuCard/MenuCard'
 import styles from './MenuPage.module.scss'
 
 const MenuPage = () => {

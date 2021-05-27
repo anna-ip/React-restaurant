@@ -15,8 +15,7 @@ const fakeContext = {
       category: 'breakfast',
       price: '250kr',
       img: 'pexels-ash-376464.jpg',
-      desc:
-        "I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed ",
+      desc: "I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed ",
     },
     {
       id: 2,
@@ -24,8 +23,7 @@ const fakeContext = {
       category: 'lunch',
       price: '250kr',
       img: 'pexels-ash-376464.jpg',
-      desc:
-        "I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed ",
+      desc: "I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed ",
     },
   ],
 }

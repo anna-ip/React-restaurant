@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Header from './components/Header/Header'
-import LandingPage from './components/LandingPage/LandingPage'
-import MenuPage from './components/MenuPage/MenuPage'
-import Footer from './components/Footer/Footer'
+import Header from './page-components/Header/Header'
+import LandingPage from './pages/LandingPage/LandingPage'
+import MenuPage from './pages/Menu/MenuPage'
+import Footer from './page-components/Footer/Footer'
 import './App.scss'
 
 import menus from './menus.json'
 import reviews from './reviews.json'
 
-export const MenuContext = React.createContext([])
-export const ReviewContext = React.createContext([])
+export const MenuContext = React.createContext({ menus: [] })
+export const ReviewContext = React.createContext({ reviews: [] })
 
 const App = () => {
   const [storeMenus, setStoreMenus] = useState(menus)
