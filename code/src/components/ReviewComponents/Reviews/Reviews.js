@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
-import { ReviewContext } from '../../../../App'
+import { ReviewContext } from '../../../App'
 import Card from '../Card/Card'
 import Arrows from '../Arrows/Arrows'
 import styles from './Reviews.module.scss'
-import useCarousel from '../../../../hooks/useCarousel'
+import useCarousel from '../../../hooks/useCarousel'
 
 const Reviews = () => {
   const [storeReviews] = useContext(ReviewContext)

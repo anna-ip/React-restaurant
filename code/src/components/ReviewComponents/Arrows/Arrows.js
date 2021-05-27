@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Arrows.module.scss'
-import Button from '../../../../ui-components/Button'
+import Button from '../../../ui-components/Button'
 
 const Arrows = ({ nextReview, prevReview }) => {
   return (
