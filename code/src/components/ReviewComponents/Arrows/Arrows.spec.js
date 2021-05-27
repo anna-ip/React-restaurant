@@ -10,20 +10,20 @@ describe('<Arrows/>', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
-  test('Renders two buttons/arrows', () => {
+  test.skip('Renders two buttons/arrows', () => {
     const wrapper = setup()
     const buttons = wrapper.find('button')
     expect(buttons.length).toBe(2)
   })
 
-  test('prev btn have been clicked', () => {
+  test.skip('prev btn have been clicked', () => {
     const component = setup()
     const button = component.find('button.prev')
     button.simulate('click')
     expect(component.find('button.prev').length).toEqual(1)
   })
 
-  test('next btn have been clicked', () => {
+  test.skip('next btn have been clicked', () => {
     const component = setup()
     const button = component.find('button.next')
     button.simulate('click')

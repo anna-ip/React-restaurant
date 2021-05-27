@@ -2,19 +2,13 @@
 
 exports[`<Arrows/> Renders correctly 1`] = `
 <Fragment>
-  <button
+  <Button
     className="prev"
-  >
-    <span>
-      ←
-    </span>
-  </button>
-  <button
+    value="←"
+  />
+  <Button
     className="next"
-  >
-    <span>
-      →
-    </span>
-  </button>
+    value="→"
+  />
 </Fragment>
 `;

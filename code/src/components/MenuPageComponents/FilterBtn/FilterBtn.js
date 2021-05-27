@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { MenuContext } from '../../../App'
+import Button from '../../../ui-components/Button'
 import styles from './FilterBtn.module.scss'
 
 const FilterBtn = ({ filterMenuClick }) => {
@@ -21,14 +22,13 @@ const FilterBtn = ({ filterMenuClick }) => {
         const category = getCategoryFromSection(section)
 
         return (
-          <button
-            onClick={(e) => filterMenuClick(e)}
-            value={category}
-            key={index}
-            className={styles.btn}
-          >
-            {category}
-          </button>
+          <div key={index}>
+            <Button
+              onClick={(e) => filterMenuClick(e)}
+              value={category}
+              className={`${styles.btn}`}
+            />
+          </div>
         )
       })}
     </>

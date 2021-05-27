@@ -5,10 +5,11 @@
 @import './page-components/Footer/Footer.module.scss';
 @import './components/MenuPageComponents/MenuCardItem/MenuCardItem.module.scss';
 @import './pages/Menu/MenuPage.module.scss';
-@import './components/ReviewComponents/REviewComponents/Reviews/Reviews.module.scss';
+@import './components/ReviewComponents/Reviews/Reviews.module.scss';
 @import './pages/LandingPage/LandingPage.module.scss';
-@import './components/ReviewComponents/REviewComponents//Card/Card.module.scss';
-@import './components/ReviewComponents/REviewComponents//Arrows/Arrows.module.scss';
+@import './components/ReviewComponents/Card/Card.module.scss';
+@import './components/ReviewComponents/Arrows/Arrows.module.scss';
+@import './ui-components/Button.module.scss';
 @import './styles/_variables.scss';
 
 body {

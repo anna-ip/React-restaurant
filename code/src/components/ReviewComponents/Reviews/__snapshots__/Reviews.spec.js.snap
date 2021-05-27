@@ -24,7 +24,7 @@ exports[`<Reviews/> <Renders correctly using enzyme 1`] = `
     />
     <Arrows
       nextReview={[Function]}
-      prevRewiev={[Function]}
+      prevReview={[Function]}
     />
   </section>
 </div>

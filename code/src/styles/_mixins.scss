@@ -1,3 +1,5 @@
+@import './variables';
+
 @mixin flexCenter {
   display: flex;
   flex-direction: column;
