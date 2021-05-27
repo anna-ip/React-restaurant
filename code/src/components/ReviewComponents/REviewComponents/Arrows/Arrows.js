@@ -1,15 +1,12 @@
 import React from 'react'
 import styles from './Arrows.module.scss'
+import Button from '../../../../ui-components/Button'
 
 const Arrows = ({ nextReview, prevReview }) => {
   return (
     <>
-      <button onClick={prevReview} className={styles.prev}>
-        <span>←</span>
-      </button>
-      <button onClick={nextReview} className={styles.next}>
-        <span>→</span>
-      </button>
+      <Button onClick={prevReview} className={`${styles.prev}`} value={'←'} />
+      <Button onClick={nextReview} className={`${styles.next}`} value={'→'} />
     </>
   )
 }

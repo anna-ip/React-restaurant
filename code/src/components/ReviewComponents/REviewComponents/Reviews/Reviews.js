@@ -17,7 +17,7 @@ const Reviews = () => {
       <section>
         <span className={styles.qoutes}>,,</span>
         <Card quote={quote} />
-        <Arrows nextReview={nextReview} prevRewiev={prevReview} />
+        <Arrows nextReview={nextReview} prevReview={prevReview} />
       </section>
     </div>
   )
