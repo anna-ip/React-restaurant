@@ -5,8 +5,8 @@ import Button from '../../../../ui-components/Button'
 const Arrows = ({ nextReview, prevReview }) => {
   return (
     <>
-      <Button onClick={prevReview} className={`${styles.prev}`} value={'←'} />
-      <Button onClick={nextReview} className={`${styles.next}`} value={'→'} />
+      <Button onClick={prevReview} className={styles.prev} value={'←'} />
+      <Button onClick={nextReview} className={styles.next} value={'→'} />
     </>
   )
 }

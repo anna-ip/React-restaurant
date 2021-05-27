@@ -1,33 +1,25 @@
 @import '../../../../styles/_variables.scss';
 
-
-
 .prev,
 .next {
-  cursor: pointer;
   display: block;
   position: absolute;
   top: 177px;
-  background-color: inherit;
-  border: none;
   font-size: 6.4vw;
-  color: $red-color;
-   
-    &:hover {
-    transform: scale(1.2);
-  }
- 
+
   @media (min-width: $layout-breakpoint-small) {
     font-size: 4vw;
     top: 198px;
   }
 }
+
 .prev {
   left: 2vw;
   @media (min-width: $layout-breakpoint-small) {
     left: 1vw;
   }
 }
+
 .next {
   right: 2vw;
   @media (min-width: $layout-breakpoint-small) {

@@ -1,10 +1,6 @@
 @import '../../../styles/_variables.scss';
 
 .btn {
-  cursor: pointer;
-  border: none;
-  background: inherit;
-  color: $red-color;
   text-transform: capitalize;
 
   @media (min-width: $layout-breakpoint-small) {
