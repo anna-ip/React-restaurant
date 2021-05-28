@@ -7,9 +7,7 @@ exports[`<MenuCardItem/> Renders correctly 1`] = `
   <img
     alt="dish"
     className="img"
-    height="150vw"
     src="assets/pexels-alexander-mils-2103945.jpg"
-    width="150vw"
   />
   <section
     className="section"

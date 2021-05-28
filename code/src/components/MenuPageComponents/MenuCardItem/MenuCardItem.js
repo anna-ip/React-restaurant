@@ -4,13 +4,7 @@ import styles from "./MenuCardItem.module.scss";
 const MenuCardItem = ({ menu }) => {
   return (
     <article className={styles.container}>
-      <img
-        src={`assets/${menu.img}`}
-        alt="dish"
-        width="150vw"
-        height="150vw"
-        className={styles.img}
-      />
+      <img src={`assets/${menu.img}`} alt="dish" className={styles.img} />
       <section className={styles.section}>
         <div className={styles.titleContainer}>
           <p className={styles.title}>{menu.title}</p>

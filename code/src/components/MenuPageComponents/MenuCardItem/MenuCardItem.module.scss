@@ -13,15 +13,15 @@
   }
 }
 .img {
-  width: 20rem;
+  width: 20em;
   height: auto;
   object-fit: cover;
   margin-top: 0.5rem;
-  border: $image-border;
-
+  @include imageBorder;
+ 
   @media (min-width: $layout-breakpoint-small) {
-    width: 10rem;
-    height: 12rem;
+    width: 10em;
+    height: 12em;
   }
 }
 .section {
