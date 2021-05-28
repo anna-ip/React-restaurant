@@ -1,19 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Footer/> Renders correctly 1`] = `
-<div
+<footer
   className="footerContainer"
 >
-  <h2
-    className="logo"
-  >
-    The Diner
-  </h2>
-  <p>
-    Luddingsbo Mekanikusv 54, 129 88 Stockholm
-  </p>
-  <p>
-    08-5754933
-  </p>
-</div>
+  <address>
+    <h2
+      className="logo"
+    >
+      The Diner
+    </h2>
+    <p>
+      Luddingsbo Mekanikusv 54, 129 88 Stockholm
+    </p>
+    <p>
+      08-5754933
+    </p>
+  </address>
+</footer>
 `;

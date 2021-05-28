@@ -3,7 +3,7 @@ import styles from './MenuCardItem.module.scss'
 
 const MenuCardItem = ({ menu }) => {
   return (
-    <div className={styles.container}>
+    <article className={styles.container}>
       <img
         src={`assets/${menu.img}`}
         alt="dish"
@@ -18,7 +18,7 @@ const MenuCardItem = ({ menu }) => {
         </div>
         <p className={styles.desc}>{menu.desc}</p>
       </section>
-    </div>
+    </article>
   )
 }
 

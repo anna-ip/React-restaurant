@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Reviews/> <Renders correctly using enzyme 1`] = `
-<div
+<article
   className="container"
 >
   <h3>
@@ -27,5 +27,5 @@ exports[`<Reviews/> <Renders correctly using enzyme 1`] = `
       prevReview={[Function]}
     />
   </section>
-</div>
+</article>
 `;

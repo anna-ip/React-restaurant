@@ -1,5 +1,8 @@
 @import '../../styles/_variables.scss';
 
+address {
+  font-style: unset;
+}
 .footerContainer {
   background-color: $dark-color;
   color: $base-color;

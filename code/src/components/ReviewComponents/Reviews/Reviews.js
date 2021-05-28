@@ -12,14 +12,14 @@ const Reviews = () => {
   const [nextReview, prevReview, quote] = useCarousel(reviews)
 
   return (
-    <div className={styles.container}>
+    <article className={styles.container}>
       <h3>Reviews</h3>
       <section>
         <span className={styles.qoutes}>,,</span>
         <Card quote={quote} />
         <Arrows nextReview={nextReview} prevReview={prevReview} />
       </section>
-    </div>
+    </article>
   )
 }
 
