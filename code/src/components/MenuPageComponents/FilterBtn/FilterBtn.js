@@ -1,25 +1,25 @@
-import React, { useContext } from 'react'
-import { MenuContext } from '../../../App'
-import Button from '../../../ui-components/Button'
-import styles from './FilterBtn.module.scss'
+import React, { useContext } from "react";
+import { MenuContext } from "../../../App";
+import Button from "../../../ui-components/Button";
+import styles from "./FilterBtn.module.scss";
 
 const FilterBtn = ({ filterMenuClick }) => {
-  const [storeMenus] = useContext(MenuContext)
-  const menus = storeMenus.menus
+  const [storeMenus] = useContext(MenuContext);
+  const menus = storeMenus.menus;
 
-  const filteredBtn = ['all']
+  const filteredBtn = ["all"];
   menus.filter((item) => {
-    const i = filteredBtn.findIndex((x) => x.category === item.category)
+    const i = filteredBtn.findIndex((x) => x.category === item.category);
     if (i <= -1) {
-      filteredBtn.push(item)
+      filteredBtn.push(item);
     }
-    return null
-  })
+    return null;
+  });
 
   return (
     <>
       {filteredBtn.map((section, index) => {
-        const category = getCategoryFromSection(section)
+        const category = getCategoryFromSection(section);
 
         return (
           <div key={index}>
@@ -29,14 +29,14 @@ const FilterBtn = ({ filterMenuClick }) => {
               className={`${styles.btn}`}
             />
           </div>
-        )
+        );
       })}
     </>
-  )
-}
+  );
+};
 
 export const getCategoryFromSection = (section) => {
-  return section?.category || 'all'
-}
+  return section?.category || "all";
+};
 
-export default FilterBtn
+export default FilterBtn;

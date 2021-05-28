@@ -1,15 +1,15 @@
-import React, { useContext } from 'react'
-import { ReviewContext } from '../../../App'
-import Card from '../Card/Card'
-import Arrows from '../Arrows/Arrows'
-import styles from './Reviews.module.scss'
-import useCarousel from '../../../hooks/useCarousel'
+import React, { useContext } from "react";
+import { ReviewContext } from "../../../App";
+import Card from "../Card/Card";
+import Arrows from "../Arrows/Arrows";
+import styles from "./Reviews.module.scss";
+import useCarousel from "../../../hooks/useCarousel";
 
 const Reviews = () => {
-  const [storeReviews] = useContext(ReviewContext)
-  const reviews = storeReviews.reviews
+  const [storeReviews] = useContext(ReviewContext);
+  const reviews = storeReviews.reviews;
 
-  const [nextReview, prevReview, quote] = useCarousel(reviews)
+  const [nextReview, prevReview, quote] = useCarousel(reviews);
 
   return (
     <article className={styles.container}>
@@ -20,7 +20,7 @@ const Reviews = () => {
         <Arrows nextReview={nextReview} prevReview={prevReview} />
       </section>
     </article>
-  )
-}
+  );
+};
 
-export default Reviews
+export default Reviews;

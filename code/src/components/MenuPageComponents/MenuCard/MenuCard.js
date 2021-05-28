@@ -1,5 +1,5 @@
-import React from 'react'
-import MenuCardItem from '../MenuCardItem/MenuCardItem'
+import React from "react";
+import MenuCardItem from "../MenuCardItem/MenuCardItem";
 
 const MenuCard = ({ filteredMenu }) => {
   return (
@@ -7,7 +7,7 @@ const MenuCard = ({ filteredMenu }) => {
       {filteredMenu &&
         filteredMenu.map((menu) => <MenuCardItem key={menu.id} menu={menu} />)}
     </>
-  )
-}
+  );
+};
 
-export default MenuCard
+export default MenuCard;

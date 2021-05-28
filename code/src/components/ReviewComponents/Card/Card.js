@@ -1,5 +1,5 @@
-import React from 'react'
-import styles from './Card.module.scss'
+import React from "react";
+import styles from "./Card.module.scss";
 
 const Card = ({ quote }) => {
   return (
@@ -7,7 +7,7 @@ const Card = ({ quote }) => {
       <h4>{quote.name}</h4>
       <p>{quote.text}</p>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

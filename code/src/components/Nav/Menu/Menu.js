@@ -1,6 +1,6 @@
-import React from 'react'
-import styles from './Menu.module.scss'
-import Buttons from './Links/Buttons'
+import React from "react";
+import styles from "./Menu.module.scss";
+import Buttons from "./Links/Buttons";
 
 function Menu({ open, setOpen }) {
   return (
@@ -13,7 +13,7 @@ function Menu({ open, setOpen }) {
         </ul>
       </nav>
     </>
-  )
+  );
 }
 
-export default Menu
+export default Menu;

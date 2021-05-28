@@ -1,5 +1,5 @@
-import React from 'react'
-import styles from './Footer.module.scss'
+import React from "react";
+import styles from "./Footer.module.scss";
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
         <p>08-5754933</p>
       </address>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

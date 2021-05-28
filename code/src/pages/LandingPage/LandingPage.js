@@ -1,7 +1,7 @@
-import React from 'react'
-import Reviews from '../../components/ReviewComponents/Reviews/Reviews'
-import styles from './LandingPage.module.scss'
-import mainImage from '../../images/pexels-emre-can-2079438.jpg'
+import React from "react";
+import Reviews from "../../components/ReviewComponents/Reviews/Reviews";
+import styles from "./LandingPage.module.scss";
+import mainImage from "../../images/pexels-emre-can-2079438.jpg";
 
 const LandingPage = () => {
   return (
@@ -9,7 +9,7 @@ const LandingPage = () => {
       <img src={mainImage} alt="restaurant" className={styles.img} />
       <Reviews />
     </div>
-  )
-}
+  );
+};
 
-export default LandingPage
+export default LandingPage;

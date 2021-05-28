@@ -1,5 +1,5 @@
-import React from 'react'
-import styles from './MenuCardItem.module.scss'
+import React from "react";
+import styles from "./MenuCardItem.module.scss";
 
 const MenuCardItem = ({ menu }) => {
   return (
@@ -19,7 +19,7 @@ const MenuCardItem = ({ menu }) => {
         <p className={styles.desc}>{menu.desc}</p>
       </section>
     </article>
-  )
-}
+  );
+};
 
-export default MenuCardItem
+export default MenuCardItem;
