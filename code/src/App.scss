@@ -1,7 +1,7 @@
 @import './page-components/Header/Header.module.scss';
 @import './components/Nav/Burger/Burger.module.scss';
 @import './components/Nav/Menu/Menu.module.scss';
-@import './components/Nav/Menu/Links/Buttons.module.scss';
+@import './components/Nav/Menu/Links/NavButtons.module.scss';
 @import './page-components/Footer/Footer.module.scss';
 @import './components/MenuPageComponents/MenuCardItem/MenuCardItem.module.scss';
 @import './pages/Menu/MenuPage.module.scss';
@@ -9,7 +9,7 @@
 @import './pages/LandingPage/LandingPage.module.scss';
 @import './components/ReviewComponents/Card/Card.module.scss';
 @import './components/ReviewComponents/Arrows/Arrows.module.scss';
-@import './ui-components/Button.module.scss';
+@import './ui-components/Button/Button.module.scss';
 @import './styles/_variables.scss';
 
 body {

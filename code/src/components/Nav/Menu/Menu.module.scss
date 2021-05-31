@@ -1,6 +1,10 @@
 @import '../../../styles/variables';
 @import '../../../styles/mixins';
 
+li {
+  list-style-type: none;
+}
+
 .nav {
   display: flex;
   flex-direction: row;
@@ -9,10 +13,6 @@
   @media (max-width: $layout-breakpoint-small) {
     visibility: hidden;
   }
-}
-
-.menuNavItem {
-  list-style-type: none;
 }
 
 .navOpen {

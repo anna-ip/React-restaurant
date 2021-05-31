@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { MenuContext } from "../../../App";
-import Button from "../../../ui-components/Button";
+import Button from "../../../ui-components/Button/Button";
 import styles from "./FilterBtn.module.scss";
 
 const FilterBtn = ({ filterMenuClick }) => {

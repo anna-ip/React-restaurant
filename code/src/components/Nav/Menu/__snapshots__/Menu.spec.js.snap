@@ -16,10 +16,15 @@ exports[`<Menu/> Menu render correctly 1`] = `
         ]
       }
     >
-      <li
-        className="menuNavItem"
-      >
-        <Buttons />
+      <li>
+        <div
+          className="menuNavItem"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          role="presentation"
+        >
+          <NavButtons />
+        </div>
       </li>
     </ul>
   </nav>
