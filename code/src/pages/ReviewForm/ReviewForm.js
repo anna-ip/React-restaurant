@@ -1,27 +1,22 @@
-import React, { useState } from "react";
-//import { ReviewContext } from "../../App";
+import React, { useState, useContext } from "react";
+import { ReviewsContext } from "../../contexts/ReviewsContext";
 
 const ReviewForm = () => {
   const [name, setName] = useState("");
-  const [reviewText, setReviewText] = useState("");
-  // const [storeReviews, setStoreReviews] = useContext(ReviewContext);
-  // const reviews = storeReviews.reviews;
-  // console.log(reviews, setStoreReviews);
-  //import reviewContext and set the id, date, name and reviewText to the setStoreReview
+  const [text, setText] = useState("");
+  const { addReview } = useContext(ReviewsContext);
 
   const timeElapsed = Date.now();
   const today = new Date(timeElapsed).toDateString();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(
-      ` Form submitted, {"id:" 1, "date:" "${today}", "name:" ${name}, "text:"${reviewText}} `
-    );
-    // setStoreReviews();
+    // add Star rating as well
+    addReview(today, name, text);
 
-    // clear form after submit
+    // clears form after submit
     setName("");
-    setReviewText("");
+    setText("");
   };
 
   return (
@@ -48,9 +43,9 @@ const ReviewForm = () => {
           <textarea
             type="textarea"
             name="reviewText"
-            placeholder="Your review "
-            value={reviewText}
-            onChange={(e) => setReviewText(e.target.value)}
+            placeholder="Your review"
+            value={text}
+            onChange={(e) => setText(e.target.value)}
           />
         </label>
         <input type="submit" value="Post review" />

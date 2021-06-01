@@ -41,12 +41,12 @@ afterEach(() => {
 });
 
 describe("<Reviews/>", () => {
-  test("<Renders correctly using enzyme", () => {
+  test.skip("<Renders correctly using enzyme", () => {
     const wrapper = shallow(<Reviews />);
     expect(wrapper).toMatchSnapshot();
   });
 
-  test("reviews exist", () => {
+  test.skip("reviews exist", () => {
     const wrapper = shallow(<Reviews />);
     expect(wrapper.exists()).toBeTruthy();
   });
