@@ -4,6 +4,14 @@ exports[`<Card/> Renders correctly with enzyme 1`] = `
 <div
   className="container"
 >
+  <span
+    className="qoutes"
+  >
+    ,,
+  </span>
+  <p>
+    Mon May 31 2021
+  </p>
   <h4>
     susan smith
   </h4>

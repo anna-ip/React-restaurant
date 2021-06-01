@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./page-components/Header/Header";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import MenuPage from "./pages/Menu/MenuPage";
+import ReviewForm from "./pages/ReviewForm/ReviewForm";
 import Footer from "./page-components/Footer/Footer";
 import "./App.scss";
 
@@ -27,6 +28,9 @@ const App = () => {
             </Route>
             <Route path="/menu">
               <MenuPage />
+            </Route>
+            <Route path="/review">
+              <ReviewForm />
             </Route>
           </Switch>
           <Footer />
