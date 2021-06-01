@@ -1,0 +1,14 @@
+@import '../../styles/_variables.scss';
+.link {
+  cursor: pointer;
+  border: none;
+  background: inherit;
+  color: $red-color;
+  text-decoration: none;
+
+    &:focus,
+    &:hover {
+      transform: scale(1.1);
+      text-decoration: underline;
+    }
+}

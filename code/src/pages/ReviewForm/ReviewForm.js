@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import { ReviewsContext } from "../../contexts/ReviewsContext";
+import styles from "./ReviewForm.module.scss";
 
 const ReviewForm = () => {
   const [name, setName] = useState("");
@@ -20,9 +21,9 @@ const ReviewForm = () => {
   };
 
   return (
-    <>
-      <form onSubmit={handleSubmit}>
-        <p>Date: {today}</p>
+    <div className={styles.container}>
+      <form onSubmit={handleSubmit} className={styles.form}>
+        <p>{today}</p>
         <label>
           Name:
           <input
@@ -45,12 +46,13 @@ const ReviewForm = () => {
             name="reviewText"
             placeholder="Your review"
             value={text}
+            rows="5"
             onChange={(e) => setText(e.target.value)}
           />
         </label>
-        <input type="submit" value="Post review" />
+        <input type="submit" value="Post review" className={styles.submitBtn} />
       </form>
-    </>
+    </div>
   );
 };
 
