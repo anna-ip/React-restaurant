@@ -8,16 +8,16 @@ const ReviewsContextProvider = (props) => {
     const localData = localStorage.getItem("reviews");
     return localData ? JSON.parse(localData) : reviews.reviews;
   });
-  const id = Date.now();
 
-  const addReview = (date, name, text) => {
+  const addReview = (date, name, rating, text) => {
+    const id = Date.now();
     setReviewsList([
       ...reviewsList,
       {
-        // add star rating aswell
         id: id,
         date: date,
         name: name,
+        rating: rating,
         text: text,
       },
     ]);

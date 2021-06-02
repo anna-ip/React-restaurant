@@ -1,12 +1,13 @@
 import React, { useState, useContext } from "react";
+import StarRating from "../../components/StarRating/StarRating";
 import { ReviewsContext } from "../../contexts/ReviewsContext";
 import Button from "../../ui-components/Button/Button";
-//import { withRouter } from "react-router-dom";
 import styles from "./ReviewForm.module.scss";
 
 const ReviewForm = () => {
   const [name, setName] = useState("");
   const [text, setText] = useState("");
+  const [rating, setRating] = useState(0);
   const { addReview } = useContext(ReviewsContext);
 
   const timeElapsed = Date.now();
@@ -15,12 +16,16 @@ const ReviewForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // add Star rating as well
-    addReview(today, name, text);
+    addReview(today, name, rating, text);
     location.replace("/");
 
     // clears form after submit
     setName("");
     setText("");
+  };
+
+  const handleRating = (e) => {
+    setRating(e.target.value);
   };
 
   return (
@@ -38,11 +43,13 @@ const ReviewForm = () => {
             onChange={(e) => setName(e.target.value)}
           />
         </label>
-        <p>
-          <span role="img" aria-label="rating-stars">
-            ⭐︎⭐︎⭐︎⭐︎⭐︎
-          </span>
-        </p>
+
+        <StarRating
+          rating={rating}
+          onChange={(e) => setRating(e.target.value)}
+          handleRating={handleRating}
+        />
+
         <label>
           Review:
           <textarea

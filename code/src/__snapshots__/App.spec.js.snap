@@ -108,7 +108,7 @@ exports[`<App/> renders correctly using enzyme 1`] = `
           <MenuPage />
         </Route>
         <Route
-          path="/reviews"
+          path="/review"
         >
           <ReviewForm />
         </Route>
