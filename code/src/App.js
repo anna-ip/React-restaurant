@@ -27,7 +27,7 @@ const App = () => {
             <Route path="/menu">
               <MenuPage />
             </Route>
-            <Route path="/reviews">
+            <Route path="/review">
               <ReviewForm />
             </Route>
           </Switch>

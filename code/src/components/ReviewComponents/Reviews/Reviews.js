@@ -17,7 +17,7 @@ const Reviews = () => {
         <Card quote={quote} />
         <Arrows nextReview={nextReview} prevReview={prevReview} />
         <Links
-          to="/reviews"
+          to="/review"
           text="Share Your Feedback ✎"
           className={styles.link}
         />

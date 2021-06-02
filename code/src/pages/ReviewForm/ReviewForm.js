@@ -1,5 +1,7 @@
 import React, { useState, useContext } from "react";
 import { ReviewsContext } from "../../contexts/ReviewsContext";
+import Button from "../../ui-components/Button/Button";
+//import { withRouter } from "react-router-dom";
 import styles from "./ReviewForm.module.scss";
 
 const ReviewForm = () => {
@@ -14,6 +16,7 @@ const ReviewForm = () => {
     e.preventDefault();
     // add Star rating as well
     addReview(today, name, text);
+    location.replace("/");
 
     // clears form after submit
     setName("");
@@ -31,6 +34,7 @@ const ReviewForm = () => {
             name="name"
             placeholder="name"
             value={name}
+            required
             onChange={(e) => setName(e.target.value)}
           />
         </label>
@@ -47,10 +51,16 @@ const ReviewForm = () => {
             placeholder="Your review"
             value={text}
             rows="5"
+            required
             onChange={(e) => setText(e.target.value)}
           />
         </label>
-        <input type="submit" value="Post review" className={styles.submitBtn} />
+        <input type="submit" value="Post review" className={styles.btn} />
+        <Button
+          className={styles.btn}
+          value="Take me back"
+          onClick={() => location.replace("/")}
+        />
       </form>
     </div>
   );
