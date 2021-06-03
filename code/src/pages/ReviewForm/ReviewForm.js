@@ -1,7 +1,10 @@
 import React, { useState, useContext } from "react";
 import StarRating from "../../components/StarRating/StarRating";
 import { ReviewsContext } from "../../contexts/ReviewsContext";
+
 import Button from "../../ui-components/Button/Button";
+import Input from "../../ui-components/Input/Input";
+import TextArea from "../../ui-components/TextArea/TextArea";
 import styles from "./ReviewForm.module.scss";
 
 const ReviewForm = () => {
@@ -15,11 +18,10 @@ const ReviewForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // add Star rating as well
+
     addReview(today, name, rating, text);
     location.replace("/");
 
-    // clears form after submit
     setName("");
     setText("");
   };
@@ -32,37 +34,30 @@ const ReviewForm = () => {
     <div className={styles.container}>
       <form onSubmit={handleSubmit} className={styles.form}>
         <p>{today}</p>
-        <label>
-          Name:
-          <input
-            type="text"
-            name="name"
-            placeholder="name"
-            value={name}
-            required
-            onChange={(e) => setName(e.target.value)}
-          />
-        </label>
-
+        <Input
+          label="Name:"
+          type="text"
+          name="name"
+          placeholder="name"
+          value={name}
+          required
+          onChange={(e) => setName(e.target.value)}
+        />
         <StarRating
           rating={rating}
-          onChange={(e) => setRating(e.target.value)}
+          onChange={handleRating}
           handleRating={handleRating}
         />
-
-        <label>
-          Review:
-          <textarea
-            type="textarea"
-            name="reviewText"
-            placeholder="Your review"
-            value={text}
-            rows="5"
-            required
-            onChange={(e) => setText(e.target.value)}
-          />
-        </label>
-        <input type="submit" value="Post review" className={styles.btn} />
+        <TextArea
+          label="Review:"
+          name="reviewText"
+          placeholder="Your review"
+          value={text}
+          rows="5"
+          required
+          onChange={(e) => setText(e.target.value)}
+        />
+        <Input type="submit" value="Post review" className={styles.btn} />
         <Button
           className={styles.btn}
           value="Take me back"

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ReviewForm/> render correctly 1`] = `
+<div
+  className="container"
+>
+  <form
+    className="form"
+    onSubmit={[Function]}
+  >
+    <p>
+      Thu Jun 03 2021
+    </p>
+    <Input
+      label="Name:"
+      name="name"
+      onChange={[Function]}
+      placeholder="name"
+      required={true}
+      type="text"
+      value=""
+    />
+    <StarRating
+      handleRating={[Function]}
+      onChange={[Function]}
+      rating={0}
+    />
+    <TextArea
+      label="Review:"
+      name="reviewText"
+      onChange={[Function]}
+      placeholder="Your review"
+      required={true}
+      rows="5"
+      value=""
+    />
+    <Input
+      className="btn"
+      type="submit"
+      value="Post review"
+    />
+    <Button
+      className="btn"
+      onClick={[Function]}
+      value="Take me back"
+    />
+  </form>
+</div>
+`;
