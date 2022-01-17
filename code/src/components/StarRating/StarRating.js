@@ -3,9 +3,11 @@ import { FaStar } from "react-icons/fa";
 import styles from "./StarRating.module.scss";
 
 const StarRating = ({ handleRating, rating }) => {
+  const arr = [...Array(5)];
+
   return (
     <div className={styles.container}>
-      {[...Array(5)].map((star, index) => {
+      {arr.map((star, index) => {
         const ratingValue = index + 1;
         return (
           <label key={index}>

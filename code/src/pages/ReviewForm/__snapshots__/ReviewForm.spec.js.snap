@@ -9,7 +9,7 @@ exports[`<ReviewForm/> render correctly 1`] = `
     onSubmit={[Function]}
   >
     <p>
-      Thu Jun 03 2021
+      Fri Jun 04 2021
     </p>
     <Input
       label="Name:"
