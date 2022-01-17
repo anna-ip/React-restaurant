@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StarRating/> snapshot test 1`] = `
+<div
+  className="container"
+>
+  <label
+    key="0"
+  >
+    <input
+      name="rating"
+      type="radio"
+      value={1}
+    />
+    <FaStar
+      className="star"
+    />
+  </label>
+  <label
+    key="1"
+  >
+    <input
+      name="rating"
+      type="radio"
+      value={2}
+    />
+    <FaStar
+      className="star"
+    />
+  </label>
+  <label
+    key="2"
+  >
+    <input
+      name="rating"
+      type="radio"
+      value={3}
+    />
+    <FaStar
+      className="star"
+    />
+  </label>
+  <label
+    key="3"
+  >
+    <input
+      name="rating"
+      type="radio"
+      value={4}
+    />
+    <FaStar
+      className="star"
+    />
+  </label>
+  <label
+    key="4"
+  >
+    <input
+      name="rating"
+      type="radio"
+      value={5}
+    />
+    <FaStar
+      className="star"
+    />
+  </label>
+</div>
+`;

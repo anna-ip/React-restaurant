@@ -1,5 +1,5 @@
 import React from "react";
-import NavLinks from "../../../../ui-components/Link/NavLinks";
+import NavLinks from "../../../../ui-components/NavLink/NavLinks";
 import styles from "./NavButtons.module.scss";
 
 const NavButtons = () => {

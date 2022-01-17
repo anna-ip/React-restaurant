@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+
+.container{
+  display: flex;
+  flex-direction: row;
+  
+  input[type="radio"] {
+    display: none;
+  }
+  .star {
+    cursor: pointer;
+    transition: color 200ms;
+    font-size: 1.2rem;
+    color: $base-color;
+  }
+  
+  .yellowStar {
+    cursor: pointer;
+    transition: color 200ms;
+    font-size: 1.2rem;
+    color: #ffe100;
+  }
+}

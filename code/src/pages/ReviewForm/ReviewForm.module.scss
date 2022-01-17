@@ -1,0 +1,46 @@
+@import '../../styles/_variables';
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-image: url(../../images/pexels-emre-can-2079438.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 0.5rem 2rem;
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 80%;
+      height: 90%;
+      background-color: $turquise-color;
+      opacity: 0.9;
+
+      label {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .btn{
+        width: 8rem;
+        height: 2rem;
+        text-transform: uppercase;
+        background: transparent;
+        cursor: pointer;
+        align-self: center;
+        border: 2px solid $red-color;
+        color: $red-color;
+        border-radius: 5px;
+
+        &:hover {
+          background:$red-color;
+          color: $base-color;
+        }
+      }
+    }
+}

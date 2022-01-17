@@ -1,23 +1,26 @@
 import React, { useContext } from "react";
-import { ReviewContext } from "../../../App";
+import useCarousel from "../../../hooks/useCarousel";
+import Links from "../../../ui-components/Link/Links";
 import Card from "../Card/Card";
 import Arrows from "../Arrows/Arrows";
 import styles from "./Reviews.module.scss";
-import useCarousel from "../../../hooks/useCarousel";
+import { ReviewsContext } from "../../../contexts/ReviewsContext";
 
 const Reviews = () => {
-  const [storeReviews] = useContext(ReviewContext);
-  const reviews = storeReviews.reviews;
-
-  const [nextReview, prevReview, quote] = useCarousel(reviews);
+  const { reviewsList } = useContext(ReviewsContext);
+  const [nextReview, prevReview, quote] = useCarousel(reviewsList);
 
   return (
     <article className={styles.container}>
       <h3>Reviews</h3>
       <section>
-        <span className={styles.qoutes}>,,</span>
         <Card quote={quote} />
         <Arrows nextReview={nextReview} prevReview={prevReview} />
+        <Links
+          to="/review"
+          text="Share Your Feedback ✎"
+          className={styles.link}
+        />
       </section>
     </article>
   );
