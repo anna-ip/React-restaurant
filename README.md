@@ -7,6 +7,7 @@ A Restaurant app with reiews and menu page.
  This project was bootstrapped with Create React App.
 * React
 * Custom hooks
+* React context
 * Sass
 * Jest
 
