@@ -3,7 +3,7 @@
 A Restaurant app with reiews and menu page.
 
 
-#### Technilogies used:
+#### Technologies used:
  This project was bootstrapped with Create React App.
 * React
 * Sass
